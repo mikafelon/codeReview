@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Game</title>
+    <!-- Lien vers la feuille de style CSS -->
+    <link rel="stylesheet" href="space.css">
+</head>
+
+<body>
+    <!-- Titre du jeu -->
+    <h1 id="title">Space Game</h1>
+
+    <!-- Zone de jeu -->
+    <div id="board">
+        <!-- Joueur -->
+        <div id="player" class="player"></div>
+        <!-- Message de victoire -->
+        <div id="victoryMessage" class="hidden">Victory!</div>
+        <!-- Message de fin de jeu -->
+        <div id="gameOverMessage" class="hidden">Game Over!</div>
+        <!-- Menu pause -->
+        <div id="pauseMenu" class="hidden">
+            <button id="continueButton">Continue</button>
+            <button id="restartButton">Restart</button>
+        </div>
+    </div>
+
+    <!-- Affichage du score -->
+    <div id="scoreBoard">Score: <span id="score">0</span></div>
+    <!-- Affichage du temps écoulé -->
+    <div id="timer">Time: <span id="time">00:00</span></div>
+    <!-- Affichage des vies restantes -->
+    <div id="lives">Lives: <span id="lives">3</span></div>
+
+    <!-- Inclusion du script JavaScript -->
+    <script src="space.js"></script>
+</body>
+
+</html>
